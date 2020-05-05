@@ -1,0 +1,57 @@
+<link type="text/css" rel="stylesheet" href="../public/bootstrap/css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="../public/bootstrap/css/bootstrap-grid.css">
+<link type="text/css" rel="stylesheet" href="css/mainStyle.css">
+<script type="text/javascript" src="js/secondClicked.js"></script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="https://unpkg.com/popper.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.js"></script>
+<script src="https://use.fontawesome.com/2b04d6cc36.js"></script>
+
+
+
+<div class="modal fade" id="newReviewWindow">
+    <div class="modal-dialog modal-lg" role="dialog">
+        <div class="modal-content" role="document">
+            <div class="modal-header">
+                <h3 class="modal-title">Submit a new Review</h3>
+            </div>
+            
+            <div class="modal-body">
+                <div class="form-row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="newSubject">Enter Subject</label>
+                            <input id="newSubject" class="form-control" placeholder="Type the title of your comment here.">
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="ratingBar">Ratings</label>
+                            <div class="d-flex">
+                                <input id="ratingBar" type="range" value=0 min=0 max=10 onchange="onbarChange()">
+                                <small id=rangeAns>10</small>
+                                
+                            </div>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="isAnonymus">
+                            <label class="form-check-label" for="isAnonymus">Anonymous Submmission</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="newContent">Enter your Reviews</label>
+                            <textarea class="form-control" rows="10" placeholder="Type your comments here." id="reviewText"></textarea>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="javascript: void()">
+                                <button id="submitNewReview" type="submit" class="btn-primary btn" data-dismiss="modal" onclick="onCLickReviewAdd()">Submit</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

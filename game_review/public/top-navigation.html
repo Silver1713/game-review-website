@@ -1,0 +1,69 @@
+
+<link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="css/mainStyle.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="https://unpkg.com/popper.js" defer></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.js" defer></script>
+<script type="text/javascript" src="js/secondClicked.js" defer></script>
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top shadowBox">
+    <script type="text/javascript" src="./js/sessionCheck.js" defer></script>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/logo/SVG/brand_logo.svg" width="60em" height="60em">VertexGames</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#DACC">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="DACC">
+        
+        <div class="navbar-nav mr-auto">
+            <div class="nav-item active">
+                <a class="nav-link trans" href="#" id='popularNav' onclick="initiate1()">Popular</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link trans" href="#" id="topRatedNav" onclick="initiate2()">Top Rated</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link trans" href="#" id="editorNav" onclick="initiate3()">Editor's Picks</a>
+            </div>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="platformDropDown" role="button" data-toggle="dropdown" href="">Platform</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" onclick="initiate4()">PC</a>
+                    <a class="dropdown-item" href="#" onclick="initiate5()" >XBOX</a>
+                    
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="platformDropDown" role="button" data-toggle="dropdown" href="">Genre</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" onclick="initiate6()">Adventure</a>
+                    <a class="dropdown-item" href="#" onclick="initiate7()">MMORPG</a>
+                    
+                </div>
+            </div>
+            
+            
+            <div class="nav-item " id="logIn">
+                <a  href="loginPage.html" class="nav-link">Log In</a>
+            </div>
+            
+            <div class="nav-item" id="signUp">
+                <a href="signUpPage.html" class="nav-link">Sign Up</a>
+            </div>
+            <form class="form-inline form-group">
+                <div class="input-group">
+                   <input type="text" class="form-control" placeholder="Search" id="searchInput">
+                    <a href="javascript: void()"><button class="btn btn-success" type="button" id="searchButton" onclick="onClickSearch()">Search</button></a>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+    </div>
+</nav>
+
+
+
+
+
+

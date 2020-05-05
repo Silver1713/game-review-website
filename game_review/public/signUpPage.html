@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" src="css/mainStyle.css">
+        <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.css">
+        <script src="https://use.fontawesome.com/2b04d6cc36.js" defer></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
+        <script type="text/javascript" src="https://unpkg.com/popper.js" defer></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.js" defer></script>
+        <script type="text/javascript" src="./js/sessionCheck.js" defer></script>
+        <script type="text/javascript" src="js/signup.js"></script>
+        <script type="text/javascript" src="js/secondClicked.js"></script>
+    </head>
+    
+    <body onload="checkSession()">
+        <div w3-include-html="top-navigation.html"></div>
+        <div class="container pt-3">
+            <div class="d-flex justify-content-left">
+                <h1>Create a new Account</h1>
+            </div>
+            <div class="row my-5">
+                <div class="col-sm-12 col-md-12 col-lg-12 my-5">
+                    <div class="containerFrame py-5 px-5 my-5 transparentFrame">
+                        <form>
+                            <div class="form-group">
+                                <label for="newUsername">Username</label>
+                                <input type="text" class="form-control" id="newUsername" onchange="getUserdb()">
+                                <small id="newUsernameStatus" class="text form-text text-muted">Username must be unique.</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="newPassword">Password</label>
+                                <input type="password" class="form-control" id="newPassword" onchange="passwordChecker()">
+                                <small class="text form-text text-muted" id="newPasswordStatus" for="newPassword">Password must be at least 8 character with at least one numeral or symbols.</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input class="form-control" type="password" id="confirmPassword" onchange="confirmPassCheck()" onclick="confirmPassCheck()">
+                                <small class="text form-text text-muted" id="confirmPasswordStatus">Entry must be same as Password.</small>
+                                
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="newEmail">Email</label>
+                                <input class="form-control" type="email" id="newEmail" onchange="onEmailValueChange()">
+                                <small class="text form-text text-muted" id="newEmailStatus">Please enter a valid email address.</small>
+                            </div>
+                            
+                            <div class="form-check">
+                                <input id="isPolicyAgree" class="form-check-input" type="checkbox">
+                                <label for="isPolicyAgree" class="form-check-label">I agree to this <a href="#" class="card-link">website's ToS and privacy policy.</a></label>
+                                
+                            </div>
+                            
+                            <div class="form-check">
+                                <input id="isEmailList" class="form-check-input" type="checkbox">
+                                <label for="isEmailList" class="form-check-label">Notify me about the latest updates by adding me to the mailing list.</label>
+                            </div>
+                            <small class="form-text mt-3">You must accept the terms and conditions to sign up.
+                                By allowing us to mail you, We will add you to a mailing list, where you will receive daily updates from us.
+                            </small>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary" onclick="onLogin()">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            
+            </div>
+            
+            
+            
+        </div>
+        <!--Script-->
+        
+        <div w3-include-html="login_modals.html"></div>
+        
+        
+        <div class="mt-5" w3-include-html="footer.html" style="background: aqua;"></div>
+        
+        <script src="js/w3.js"></script>
+        
+        <script>
+            //To bring in other HTML on the fly into this page
+            w3.includeHTML();
+        </script>    
+    </body>
+</html>

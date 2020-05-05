@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" src="css/mainStyle.css">
+        <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <script src="js/reviewAdd.js"></script>
+        <script type="text/javascript" src="js/secondClicked.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
+        <script type="text/javascript" src="https://unpkg.com/popper.js" defer></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.js" defer></script>
+        <script type="text/javascript" src="js/login.js"></script>
+        <script type="text/javascript" src='js/sessionCheck.js'></script>
+        <div w3-include-html="top-navigation.html"></div>
+        <script type="text/javascript" src="js/OnContentReview.js"></script>
+        <title>Warframe - Review</title>
+            
+    </head>
+    
+    <body onload='onReviewLoad(); onReviewLoad1(); checkSession();'>
+        <div class="container-fluid containerThemed">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div class="masthead xs-imgBannerAdj sm-imgBannerAdj md-imgBannerAdj lg-imgBannerAdj xl-imgBannerAdj"></div>
+                </div>
+            </div>
+            
+            <div class= "row">
+                <div class="col-12 p-0 shadowBox">
+                    <div w3-include-html="secondary-navigation.html"></div></div>
+            </div>
+            
+            <div class="row">
+                
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                     <div class="guiHeadElement text-capitalize" >
+                                <h4 class="guiNameElement">Warframe</h4>
+                            </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="gameSelection thumbnail">
+                            <div class="guiHeadElement text-capitalize" >
+                                <h4 class="guiNameElement">Trailers</h4>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9" id="videoTrailer">
+                                <iframe 
+                                        src="https://www.youtube.com/embed/cXSVA5IntiM" allowfullscreen>
+                                </iframe>
+                            </div>
+                            </div></div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                             <div class="guiHeadElement text-capitalize" >
+                                <h4 class="guiNameElement">Images</h4>
+                            </div>
+                           <div class="carousel slide" data-ride="carousel" id="editorPicksCarousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#editorPicksCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#editorPicksCarousel" data-slide-to="1" ></li>
+                            </ol>
+            
+                            <div class="carousel-inner inner-shadow" id="carouselBodyContent">
+                                
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="guiHeadElement text-capitalize" >
+                                        <h4 class="guiNameElement">EDITOR'S REVIEW</h4>
+                                    </div>
+                            <div class="editorReviewContent">
+                                
+                                <div class="containerFrame transparentFrame shadowBox" id='editorContents'>
+                                    <p>THERE ARE NO REVIEWS.</p>
+                                    
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="row my-3">
+                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                    <div class="guiHeadElement text-capitalize" >
+                            <h3 class="guiNameElement">Reviews</h3>
+                            </div>
+                        <div class="d-flex justify-content-start"><a href="javascript:void()" data-target="#newReviewWindow" data-toggle="modal">Submit new Reviews</a></div>
+                    <div class="containerFrame py-2 vertexScrollBar shadowBox transparentFrame" id="reviewContentsList">
+                        
+                            
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+         <div w3-include-html="newEditorModal.html"></div>
+        <div w3-include-html="newReviewWindow.html"></div>
+        <div w3-include-html="footer.html" class="mt-5"></div>
+        <div w3-include-html='login_modals.html'></div>
+        
+        <script src="js/w3.js"></script>
+        <script>
+            //To bring in other HTML on the fly into this page
+            w3.includeHTML();
+        </script>   
+    </body>
+    
+</html>

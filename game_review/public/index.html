@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Game Review Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" src="css/mainStyle.css">
+        <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.css">
+        <script type="text/javascript" src="./js/sessionCheck.js" defer></script>
+        <script type="text/javascript" src="./js/loadIndexMovie.js"></script>
+        <script src="https://use.fontawesome.com/2b04d6cc36.js" defer></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
+        <script type="text/javascript" src="js/secondClicked.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/popper.js" defer></script>
+        <script type="text/javascript" src="js/clickGameEvent.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.js" defer></script>
+        
+        
+       
+    </head>
+    <body onload="checkSession(); onBodyLoad()">
+        <div w3-include-html="top-navigation.html"></div>
+        
+        <div class="container">
+        <div w3-include-html="upperContent2.html"></div>
+        </div>
+    </body>
+    <footer>
+        <div style="background: aqua;" w3-include-html="footer.html"></div>
+    </footer >
+    <div w3-include-html="login_modals.html"></div>
+    <script src="js/w3.js"></script>
+    <script>
+    //To bring in other HTML on the fly into this page
+        w3.includeHTML();
+    </script>
+</html>

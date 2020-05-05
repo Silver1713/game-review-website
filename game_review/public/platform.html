@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" src="css/mainStyle.css">
+        <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.css">
+        <script src="https://use.fontawesome.com/2b04d6cc36.js" defer></script>
+        <script src="https://use.fontawesome.com/2b04d6cc36.js" defer></script>
+        <script type="text/javascript" src="https://unpkg.com/popper.js" defer></script>
+        
+        <script type="text/javascript" src="js/login.js"></script>
+        <script type="text/javascript" src='js/sessionCheck.js'></script>
+        <script type="text/javascript" src="js/secondClicked.js"></script>
+        <script src="js/clickGameEvent.js"></script>
+        <script src="js/loadPlatform.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+        <script type="text/javascript" src="js/clickGameEvent.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.js"></script>
+        <div w3-include-html="top-navigation.html"></div>
+        <title>VertexGame: Platform List.</title>
+            
+    </head>
+    
+    <body onload="onPlatLoaded(); checkSession();">
+        <div class="container pt-3">
+            <div class="guiHeadElement text-capitalize" >
+                <h6 class="guiNameElement" id='platTitle'>LOADING...</h6>
+            </div>
+             <div class="row mx-1" id='contentPlat'>
+                 <h5>LOADING...</h5>
+                
+                
+                </div>
+            </div>
+        
+        <div w3-include-html="footer.html"></div>
+        <div w3-include-html='login_modals.html'></div>
+        <script src="js/w3.js"></script>
+        <script>
+            //To bring in other HTML on the fly into this page
+            w3.includeHTML();
+        </script>   
+    
+    </body>
+    
+</html>

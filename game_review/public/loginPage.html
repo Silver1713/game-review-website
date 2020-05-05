@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Log In</title>
+        <link type="text/css" rel="stylesheet" src="css/mainStyle.css">
+        <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.css">
+        <script src="https://use.fontawesome.com/2b04d6cc36.js" defer></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
+        <script type="text/javascript" src="https://unpkg.com/popper.js" defer></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.js" defer></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js" defer></script>
+        <script type="text/javascript" src="js/secondClicked.js"></script>
+        <script type="text/javascript" src="js/sessionCheck.js"></script>
+        <script type="text/javascript" src="js/login.js"defer></script>
+    </head>
+    
+    <body onload="checkSession()">
+        <div w3-include-html="top-navigation.html"></div>
+        
+         <div class="container">
+             <div class="d-flex Header justify-content-left">
+                <h1>Login</h1>
+             </div>
+             
+             <div class="row my-5">
+                
+                 <div class="col-12 my-5">
+                     <div class="containerFrame py-5 px-5 my-5 transparentFrame" >
+                    <form>
+                        <div class="form-group">
+                            <label for="usernameInput">Username:</label>
+                            <input type="text" class="form-control" id="usernameInput">
+                        </div>
+                        <div class="form-group">
+                            <label for="passInput">Password:</label>
+                            <input type="password" class="form-control" id="passInput">
+                        </div>
+                        <div class="d-flex form-group justify-content-align">
+                            <button onclick="OnButtonClicked()" class="btn btn-primary" type="button"  data-toggle="modal" data-target="#loginResponse">Login</button>
+                            
+                        </div>
+                     
+                     </form>
+                         </div>
+                 </div>
+                 
+             </div>
+             
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+        <div w3-include-html="login_modals.html"></div>
+        
+        <div w3-include-html="footer.html" style="background: cyan;">
+        </div>
+        
+    
+    <script src="js/w3.js"></script>
+        <script>
+            //To bring in other HTML on the fly into this page
+            w3.includeHTML();
+        </script>    
+    </body>
+    
+</html>
